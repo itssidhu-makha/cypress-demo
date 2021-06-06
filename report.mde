@@ -1,0 +1,8 @@
+install mochasome reports:
+    npm i --save-dev cypress-mochawesome-reporter
+
+config file (cypress.json by default)
+  "reporter": "cypress-mochawesome-reporter"
+
+Add to cypress/support/index.js
+    import 'cypress-mochawesome-reporter/register';

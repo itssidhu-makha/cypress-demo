@@ -1,0 +1,13 @@
+{
+  "projectId": "gm2dvx",
+  "defaultCommandTimeout":6000,
+  "pageLoadTimeout":120000,
+  "reporter": "cypress-mochawesome-reporter",
+  "video": false,
+  "screenshotsFolder": "images",
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "charts": true,
+    "reportPageTitle": "demo project"
+  }
+}

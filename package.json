@@ -1,0 +1,17 @@
+{
+  "name": "com.cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "cypress run --headed --browser chrome --no-exit --reporter mochawesome",
+    "record": "cypress run --record --key ",
+    "test": "npm run run"
+  },
+  "author": "Amritpal Singh Sidhu",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.4.0",
+    "cypress-mochawesome-reporter": "^2.0.1"
+  }
+}

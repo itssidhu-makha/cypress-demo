@@ -6,7 +6,8 @@
   "scripts": {
     "run": "cypress run --headed --browser chrome --no-exit --reporter mochawesome",
     "record": "cypress run --record --key ",
-    "test": "npm run run"
+    "test": "npm run run",
+    "cy:verify": "cypress verify"
   },
   "author": "Amritpal Singh Sidhu",
   "license": "ISC",

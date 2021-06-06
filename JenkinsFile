@@ -1,20 +1,21 @@
 pipeline {
-  agent {
-    // this image provides everything needed to run Cypress
-    docker {
-      image 'cypress/base:12'
-     
-    }
-  }
-
-  stages {
-    stage('build and test') { 
-      
-
-      steps {
-        sh 'npm ci'
-        sh "npm test"
-      }
-    }
-  }
+	agent any
+	stages {
+		stage('Clone Git Repo'){
+				steps{
+					git 'https://github.com/itssidhu-makha/cypress-demo.git'
+		    }
+		}
+		stage('Install Dependencies'){
+				steps{
+					bat 'npm install'
+				}
+		}
+		stage('Run Tests'){
+				steps{
+					bat 'npm test'
+				}
+		}
+		
+	}
 }
